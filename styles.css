@@ -1,8 +1,11 @@
 
-body{
-    background-color: burlywood;
-    
-}
+body {
+    background-image: url('https://raw.githubusercontent.com/sheasyve/sheasyve.github.io/images/landscape.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
 .body{
     background-color: rgba(175, 133, 104, 0.877);
 }
