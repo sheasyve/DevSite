@@ -1,7 +1,38 @@
 .titles, .links,.projects,.assignments, .langs {
-    padding-left: 10px; /* Moves content to the right by 10px */
+    padding-left: 10px; 
+}
+.titles {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, rgb(136, 92, 60,0.5), rgba(168, 134, 109, 0.712)); 
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px; 
+}
 
-    
+.titles h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+    letter-spacing: 1px; 
+}
+
+.titles h2 {
+    font-size: 1.5em;
+    color: #141414;
+    margin-top: 10px;
+    font-weight: 300; 
+}
+
+.titles a {
+    color: #002d4b;
+    text-decoration: none;
+    border-bottom: 2px solid #007acc; 
+}
+
+.titles a:hover {
+    color: darkblue;
+    border-bottom-color: #005f99;
 }
 body {
     background-color: black;
@@ -16,7 +47,7 @@ body {
     background-size: cover; 
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: -10px; /* Compensate for body padding */
+    margin-left: -10px;
 }
 .menu{
     margin-left: auto;
@@ -25,13 +56,21 @@ body {
     
     
 }
+.projects h4{
+    color:#0d4266;
+}
 .project_info{
     color:black;
+}
+.numlist li::marker {
+    color: black; 
+}
+.bulletlist li::marker {
+    color: black; 
 }
 .titles{
     background-color: rgb(136, 92, 60,0.5);
     backdrop-filter: blur(10px);
-    /*background-color: rgb(172, 104, 55);*/
 }
 .links{
     display: flex;
@@ -47,14 +86,14 @@ body {
     margin:0; 
     padding: 0;
     text-align: left;
-    color:darkblue;
+    color:#0d4266;
     display: block; 
 }
 .links img{
     width: 25px; height: auto;
 }
 .info li{
-    color:darkblue;
+    color:#0d4266;
 }
 .langs{
     margin: 0;
@@ -71,7 +110,7 @@ body {
     padding-left: 10px;
 }
 .highlight {
-    color: darkblue; 
+    color: #0d4266; 
     font-weight: bold;
     text-decoration: underline; 
 }
