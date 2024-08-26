@@ -1,20 +1,32 @@
+.titles, .links,.projects,.assignments, .langs {
+    padding-left: 10px; /* Moves content to the right by 10px */
 
+    
+}
 body {
-    background-image: url('https://raw.githubusercontent.com/sheasyve/sheasyve.github.io/images/landscape.jpg');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: black;
+    background-image: url('../images/bg.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
   }
   
 .body{
     background-color: rgba(175, 133, 104, 0.877);
+    background-size: cover; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px; /* Compensate for body padding */
 }
 .menu{
-    
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     
+    
+}
+.project_info{
+    color:black;
 }
 .titles{
     background-color: rgb(136, 92, 60,0.5);
@@ -35,25 +47,38 @@ body {
     margin:0; 
     padding: 0;
     text-align: left;
-    color:pink;
-    
-    display: block; /* Ensure the h2 takes full width */
+    color:darkblue;
+    display: block; 
 }
 .links img{
     width: 25px; height: auto;
 }
+.info li{
+    color:darkblue;
+}
 .langs{
     margin: 0;
     padding: 0;
-    color: pink;
+
 }
 .langs li {
-    margin: 5px 0; /* Optional: adds some spacing between items */
+    margin: 5px 0; 
 }
-
+.projects{
+    padding-left: 10px;
+}
+.assignments{
+    padding-left: 10px;
+}
+.highlight {
+    color: darkblue; 
+    font-weight: bold;
+    text-decoration: underline; 
+}
 .proficiency {
     font-weight: bold;
     font-size: 0.7em;
+    color:black;
 }
 h2, p{
     color: black;
@@ -70,5 +95,5 @@ h3{
     margin-right: auto;
 }
 ol{
-    color:pink;
+    color:darkblue;
 } 
