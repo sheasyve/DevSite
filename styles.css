@@ -1,6 +1,7 @@
 .titles, .links,.projects,.assignments, .langs {
     padding-left: 10px; 
 }
+
 .titles {
     text-align: center;
     padding: 20px;
@@ -33,6 +34,7 @@
 .titles a:hover {
     color: darkblue;
     border-bottom-color: #005f99;
+    
 }
 body {
     background-color: black;
@@ -47,7 +49,7 @@ body {
     background-size: cover; 
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: -10px;
+    
 }
 .menu{
     margin-left: auto;
@@ -81,6 +83,7 @@ body {
     height: 3vh;
     background-color: rgb(136, 92, 60,0.5);
     backdrop-filter: blur(10px);
+    width: clamp(450px,80vw,800px);
 }
 .links h2{
     margin:0; 
