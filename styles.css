@@ -42,6 +42,7 @@ body {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    justify-content: center;
   }
   
 .body{
@@ -49,14 +50,14 @@ body {
     background-size: cover; 
     padding-left: 10px;
     padding-right: 10px;
-    
+    padding-bottom: 10px;
+    justify-content: center;
 }
 .menu{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
-    
+    justify-content: center;
 }
 .projects h4{
     color:#0d4266;
@@ -73,6 +74,7 @@ body {
 .titles{
     background-color: rgb(136, 92, 60,0.5);
     backdrop-filter: blur(10px);
+    
 }
 .links {
     display: flex;
@@ -86,6 +88,8 @@ body {
     width: clamp(300px, 50vw, 800px); 
     padding: 10px; 
     box-sizing: border-box; 
+    text-align: center;
+    margin: 0 auto; 
 }
 
 .links h2 {
@@ -144,6 +148,7 @@ h2, p{
     text-align: center;
   }
 .button {
+    padding-top: 10p;
     text-align: left;
 }
 h3{
