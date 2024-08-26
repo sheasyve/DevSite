@@ -80,10 +80,10 @@ body {
     justify-content: center; 
     align-items: center;
     gap: 20px;
-    height: 3vh;
+    height: clamp(60px,2vh,900px);
     background-color: rgb(136, 92, 60,0.5);
     backdrop-filter: blur(10px);
-    width: clamp(450px,80vw,800px);
+    width: clamp(400px,80vw,800px);
 }
 .links h2{
     margin:0; 
