@@ -1,2 +1,2 @@
-# DevSite
-Shea Syverson Developer Website
+# Shea Syverson Developer Website
+
