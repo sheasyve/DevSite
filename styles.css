@@ -105,16 +105,7 @@ body {
     height: auto;
 }
 
-@media (max-width: 600px) { /*mobile device*/
-    .links {
-        /*flex-direction: column; */
-        gap: 10px; 
-    }
 
-    .links img {
-        width: 16px; 
-    }
-}
 
 .info li{
     color:#0d4266;
