@@ -1,0 +1,71 @@
+
+body{
+    background-color: burlywood;
+    
+}
+.body{
+    background-color: rgba(175, 133, 104, 0.877);
+}
+.menu{
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+.titles{
+    background-color: rgb(136, 92, 60,0.5);
+    backdrop-filter: blur(10px);
+    /*background-color: rgb(172, 104, 55);*/
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    height: 3vh;
+    background-color: rgb(136, 92, 60,0.5);
+    backdrop-filter: blur(10px);
+}
+.links h2{
+    margin:0; 
+    padding: 0;
+    text-align: left;
+    color:pink;
+    
+    display: block; /* Ensure the h2 takes full width */
+}
+.links img{
+    width: 25px; height: auto;
+}
+.langs{
+    margin: 0;
+    padding: 0;
+    color: pink;
+}
+.langs li {
+    margin: 5px 0; /* Optional: adds some spacing between items */
+}
+
+.proficiency {
+    font-weight: bold;
+    font-size: 0.7em;
+}
+h2, p{
+    color: black;
+    text-align: center;
+  }
+.button {
+    text-align: left;
+}
+h3{
+    color:black;
+    background-color: rgba(172, 104, 55, 0.5);
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+}
+ol{
+    color:pink;
+} 
