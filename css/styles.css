@@ -92,19 +92,17 @@ h3, .info h3 {
 /* Links and Menus */
 .links {
     display: flex;
-    border-radius: 10px; 
-    overflow: hidden;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     gap: 20px;
     height: auto; 
     background-color: rgba(50, 0, 0, 0.9); 
     backdrop-filter: blur(10px);
-    width: clamp(300px, 60vw, 800px); 
+    width: 100%; 
+    max-width: 800px; 
     padding: 10px; 
     box-sizing: border-box; 
-    text-align: center;
     margin: 0 auto; 
 }
 
@@ -129,11 +127,12 @@ h3, .info h3 {
     height: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .links{
             flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
     }
     .contest {
         flex-direction: column;
@@ -206,7 +205,7 @@ h3, .info h3 {
 }
 
 .contest:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .projects h4, .contests h4 {
@@ -237,7 +236,17 @@ h3, .info h3 {
     padding-left: 10px;
     color: #fff;
 }
+.project-link {
+    text-decoration: none; 
+    color: inherit; 
+}
 
+.project-link:hover {
+    text-decoration: underline;
+}
+.titles a:hover {
+    text-decoration: underline;
+}
 .highlight {
     color: #ffcccb; 
     font-weight: bold;
