@@ -1,81 +1,63 @@
-.titles, .links,.projects,.assignments, .langs {
-    padding-left: 10px; 
+body {
+    background-color: #2e2e2e;
+    background-image: url('../images/bg2.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+}
+
+.body {
+    background-color: rgba(50, 0, 0, 0.8);
+    background-size: cover; 
+    padding: 10px;
+    justify-content: center;
+}
+
+.body h3 {
+    color: #e0e0e0;
+    padding: 5px;
+}
+
+.numlist h3, .bulletlist li {
+    color: #e0e0e0;
 }
 
 .titles {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, rgb(136, 92, 60,0.5), rgba(168, 134, 109, 0.712)); 
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(255, 165, 0, 0.8)); 
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.6); 
     margin-bottom: 30px; 
+    backdrop-filter: blur(10px);
 }
 
 .titles h1 {
     font-size: 2.5em;
-    color: #333;
+    color: #fff;
     margin: 0;
     letter-spacing: 1px; 
 }
 
 .titles h2 {
     font-size: 1.5em;
-    color: #141414;
+    color: #f9f1f1;
     margin-top: 10px;
     font-weight: 300; 
 }
 
 .titles a {
-    color: #002d4b;
+    color: #ffcccb;
     text-decoration: none;
-    border-bottom: 2px solid #007acc; 
+    border-bottom: 2px solid #ff6347; 
 }
 
 .titles a:hover {
-    color: darkblue;
-    border-bottom-color: #005f99;
-    
+    color: #ff6347; 
+    border-bottom-color: #ff6347; 
 }
-body {
-    background-color: black;
-    background-image: url('../images/bg.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    justify-content: center;
-  }
-  
-.body{
-    background-color: rgba(175, 133, 104, 0.877);
-    background-size: cover; 
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    justify-content: center;
-}
-.menu{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    justify-content: center;
-}
-.projects h4{
-    color:#0d4266;
-}
-.project_info{
-    color:black;
-}
-.numlist li::marker {
-    color: black; 
-}
-.bulletlist li::marker {
-    color: black; 
-}
-.titles{
-    background-color: rgb(136, 92, 60,0.5);
-    backdrop-filter: blur(10px);
-    
-}
+
 .links {
     display: flex;
     flex-direction: row;
@@ -83,21 +65,29 @@ body {
     align-items: center;
     gap: 20px;
     height: auto; 
-    background-color: rgba(136, 92, 60, 0.5); 
+    background-color: rgba(50, 0, 0, 0.9); 
     backdrop-filter: blur(10px);
-    width: clamp(300px, 50vw, 800px); 
+    width: clamp(300px, 80vw, 800px); 
     padding: 10px; 
     box-sizing: border-box; 
     text-align: center;
     margin: 0 auto; 
 }
 
+.links a {
+    color: #ffcccb;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #ff6347; 
+}
+
 .links h2 {
     margin: 0; 
     padding: 0;
     text-align: center; 
-    color: #0d4266;
-    display: block; 
+    color: #ffcccb;
 }
 
 .links img {
@@ -105,7 +95,7 @@ body {
     height: auto;
 }
 
-@media (max-width: 600px) { /*mobile device*/
+@media (max-width: 600px) {
     .links {
         flex-direction: column; 
         gap: 10px; 
@@ -117,48 +107,79 @@ body {
     }
 }
 
-.info li{
-    color:#0d4266;
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-.langs{
+
+.projects {
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.projects h4 {
+    color: #ffcccb; 
+}
+
+.project_info {
+    color: #fff;
+}
+
+.numlist li::marker {
+    color: #ffcccb; 
+}
+
+.bulletlist li::marker {
+    color: #ffcccb; 
+}
+
+.langs {
     margin: 0;
     padding: 0;
-
 }
+
 .langs li {
     margin: 5px 0; 
+    color: #fff;
 }
-.projects{
+
+.assignments {
     padding-left: 10px;
+    color: #fff;
 }
-.assignments{
-    padding-left: 10px;
-}
+
 .highlight {
-    color: #0d4266; 
+    color: #ffcccb; 
     font-weight: bold;
     text-decoration: underline; 
 }
+
 .proficiency {
     font-weight: bold;
     font-size: 0.7em;
-    color:black;
+    color: #ffcccb; /* Light red for proficiency levels */
 }
-h2, p{
-    color: black;
+
+h2, p {
+    color: #fff;
     text-align: center;
-  }
+}
+
 .button {
-    padding-top: 10p;
+    padding-top: 10px;
     text-align: left;
 }
-h3{
-    color:black;
-    background-color: rgba(172, 104, 55, 0.5);
+
+h3 {
+    color: #fff;
+    background-color: rgba(255, 99, 71, 0.7); /* Tomato red */
     backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
 }
-ol{
-    color:darkblue;
-} 
+
+ol {
+    color: #ffcccb; /* Light red for ordered lists */
+}
