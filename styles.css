@@ -158,7 +158,7 @@ body {
 
 .proficiency {
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: #ffcccb; 
 }
 
@@ -193,7 +193,12 @@ ol {
 }
 .info ol li, .info ul li {
     font-size: .9em; 
+    color: rgb(255, 255, 255);
 }
 .italic {
     font-style: italic;
+}
+.softwareattributes {
+    font-style: italic;
+    color:#ffcccb; 
 }
