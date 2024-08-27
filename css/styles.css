@@ -1,0 +1,253 @@
+/*Global Styles*/
+body {
+    background-color: #2e2e2e;
+    background-image: url('../images/bg2.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+}
+
+.body {
+    background-color: rgba(50, 0, 0, 0.8);
+    background-size: cover; 
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+h2, p {
+    color: #fff;
+    text-align: center;
+}
+
+h3, .info h3 {
+    border-radius: 5px; 
+    overflow: hidden;
+    color: #fff;
+    background-color: rgba(255, 99, 71, 0.7); 
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px; 
+}
+
+.info h3 {
+    font-size: 1.1em;
+}
+
+.info h4 {
+    color: #fff;
+    background-color: rgba(255, 99, 71, 0.7); 
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px; 
+}
+
+.italic {
+    font-style: italic;
+}
+
+.softwareattributes {
+    font-style: italic;
+    color: #ffcccb; 
+}
+/*Headings and Titles*/
+.titles {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(255, 165, 0, 0.8)); 
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.6); 
+    margin-bottom: 30px; 
+    backdrop-filter: blur(10px);
+}
+
+.titles h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 1px; 
+}
+
+.titles h2 {
+    font-size: 1.5em;
+    color: #f9f1f1;
+    margin-top: 10px;
+    font-weight: 300; 
+}
+
+.titles a {
+    color: #ffcccb;
+    text-decoration: none;
+    border-bottom: 2px solid #ff6347; 
+}
+
+.titles a:hover {
+    color: #ff6347; 
+    border-bottom-color: #ff6347; 
+}
+
+/*Links and Menus*/
+.links {
+    display: flex;
+    border-radius: 10px; 
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    height: auto; 
+    background-color: rgba(50, 0, 0, 0.9); 
+    backdrop-filter: blur(10px);
+    width: clamp(300px, 60vw, 800px); 
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.links a {
+    color: #ffcccb;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #ff6347; 
+}
+
+.links h2 {
+    margin: 0; 
+    padding: 0;
+    text-align: center; 
+    color: #ffcccb;
+}
+
+.links img {
+    width: 20px; 
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .links {
+        flex-direction: column; 
+        gap: 10px; 
+        margin: 0 auto; 
+    }
+
+    .links img {
+        width: 16px; 
+    }
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*Contests and Projects*/
+.contests {
+    display: flex;
+    flex-direction: column;
+}
+
+.contest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+    text-decoration: none; 
+}
+
+.rank {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-weight: bold; 
+    margin: 0 10px; 
+    color: pink;
+}
+
+.contest h4 {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+}
+
+.projects, .contests {
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.contest:hover {
+    text-decoration: underline;
+}
+
+.projects h4, .contests h4 {
+    color: #ffcccb; 
+    text-decoration: none; 
+}
+
+.project_info {
+    color: #fff;
+    text-decoration: none; 
+    font-weight: normal; 
+    margin-left: auto; 
+    margin-right: 20px; 
+    align-self: center; 
+    text-align: center;
+}
+
+.project-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/*Lists and Highlighting*/
+.numlist li::marker {
+    color: #ffcccb; 
+}
+
+.bulletlist li::marker {
+    color: #ffcccb; 
+}
+
+.langs {
+    margin: 0;
+    padding: 0;
+}
+
+.langs li {
+    margin: 5px 0; 
+    color: #fff;
+}
+
+.assignments {
+    padding-left: 10px;
+    color: #fff;
+}
+
+.highlight {
+    color: #ffcccb; 
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+.proficiency {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #ffcccb; 
+}
+
+ol {
+    color: #ffcccb; 
+}
+
+.info ol li, .info ul li {
+    font-size: .9em; 
+    color: rgb(255, 255, 255);
+}
