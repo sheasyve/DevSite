@@ -1,4 +1,4 @@
-/*Global Styles*/
+/* Global Styles */
 body {
     background-color: #2e2e2e;
     background-image: url('../images/bg2.png');
@@ -13,7 +13,6 @@ body {
     background-size: cover; 
     padding: 10px;
     justify-content: center;
-    
 }
 
 h2, p {
@@ -53,7 +52,8 @@ h3, .info h3 {
     font-style: italic;
     color: #ffcccb; 
 }
-/*Headings and Titles*/
+
+/* Headings and Titles */
 .titles {
     text-align: center;
     padding: 20px;
@@ -89,7 +89,7 @@ h3, .info h3 {
     border-bottom-color: #ff6347; 
 }
 
-/*Links and Menus*/
+/* Links and Menus */
 .links {
     display: flex;
     border-radius: 10px; 
@@ -130,24 +130,29 @@ h3, .info h3 {
 }
 
 @media (max-width: 600px) {
-    .links {
-        flex-direction: column; 
-        gap: 10px; 
-        margin: 0 auto; 
+    .links{
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+    }
+    .contest {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
     }
 
-    .links img {
-        width: 16px; 
+    .rank {
+        text-align: left;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .project_info {
+        margin-bottom: 5px;
     }
 }
 
-.menu {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-/*Contests and Projects*/
+/* Contests and Projects */
 .contests {
     display: flex;
     flex-direction: column;
@@ -157,18 +162,35 @@ h3, .info h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px; 
-    text-decoration: none; 
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contest a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project_info {
+    flex: 1;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: left;
 }
 
 .rank {
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: center;
-    font-weight: bold; 
-    margin: 0 10px; 
+    flex: 1;
+    font-weight: bold;
     color: pink;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contest h4 {
@@ -192,22 +214,7 @@ h3, .info h3 {
     text-decoration: none; 
 }
 
-.project_info {
-    color: #fff;
-    text-decoration: none; 
-    font-weight: normal; 
-    margin-left: auto; 
-    margin-right: 20px; 
-    align-self: center; 
-    text-align: center;
-}
-
-.project-link {
-    text-decoration: none; 
-    color: inherit; 
-}
-
-/*Lists and Highlighting*/
+/* Lists and Highlighting */
 .numlist li::marker {
     color: #ffcccb; 
 }
