@@ -148,11 +148,9 @@ h3,
 }
 
 .links img {
-    width: 20px;
+    width: clamp(5px,20px,40px);
     height: auto;
 }
-
-
 
 /* Contests and Projects */
 .projects{
@@ -308,6 +306,8 @@ ol {
         flex: 1 0 45%;
         margin: 5px;
         text-align: center;
+        min-width:20%;
+        max-width:30%;
     }
 
     .rank {
