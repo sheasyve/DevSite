@@ -323,25 +323,10 @@ ol {
         justify-content: center;
     }
 
-    .links a {
-        display: flex;
-        flex-direction: row;
-
-        margin: 5px;
-        text-align: center;
-        justify-content: center;
-        max-width: 30%;
-
-    }
-
     .links img {
-        width: 40px; 
-        height: 40px; 
-        object-fit: cover;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
+        width: 30px;
         height: auto;
+        margin-right: 10px;
     }
 
     .rank {
