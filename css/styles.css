@@ -320,7 +320,7 @@ ol {
         font-size: .8em;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
     }
 
     .links img {
