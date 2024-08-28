@@ -1,18 +1,18 @@
 :root {
-    --background-color: #1a1a1a; /* Darker background */
-    --overlay-background-color: rgba(30, 30, 30, 0.9); /* Dark overlay */
-    --primary-text-color: #e0e0e0; /* Light gray for text */
-    --secondary-text-color: #b3b3b3; /* Medium gray for secondary text */
-    --highlight-color: #ff6f61; /* Coral red highlight */
-    --button-hover-color: #d9534f; /* Darker coral red for hover */
-    --link-color: #ff6f61; /* Coral red for links */
-    --link-hover-color: #d9534f; /* Darker coral red on hover */
-    --box-shadow-color: rgba(0, 0, 0, 0.5); /* Subtle black shadow */
-    --title-gradient-start: rgba(220, 20, 60, 0.9); /* Crimson gradient start */
-    --title-gradient-end: rgba(255, 69, 0, 0.9); /* Orange-red gradient end */
-    --h3-background-color: rgba(220, 20, 60, 0.7); /* Crimson background for h3 */
-    --rank-color: #ff6f61; /* Coral red for rank */
-    --rating-color: #e0e0e0; /* Light gray for rating */
+    --background-color: #1a1a1a; /* Very dark gray (almost black) */
+    --overlay-background-color: rgba(30, 30, 30, 0.9); /* Dark gray with slight transparency */
+    --primary-text-color: #e0e0e0; /* Light gray */
+    --secondary-text-color: #b3b3b3; /* Medium gray */
+    --highlight-color: #ff6f61; /* Coral red */
+    --button-hover-color: #d9534f; /* Dark coral red */
+    --link-color: #ff6f61; /* Coral red */
+    --link-hover-color: #d9534f; /* Dark coral red */
+    --box-shadow-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    --title-gradient-start: rgba(220, 20, 60, 0.9); /* Crimson */
+    --title-gradient-end: rgba(255, 69, 0, 0.9); /* Orange-red */
+    --h3-background-color: rgba(220, 20, 60, 0.7); /* Crimson with transparency */
+    --rank-color: #ff6f61; /* Coral red */
+    --rating-color: #e0e0e0; /* Light gray */
 }
 
 /* Global Styles */
