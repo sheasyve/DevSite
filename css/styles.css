@@ -298,6 +298,7 @@ ol {
 @media (max-width: 700px) {
 
     .links {
+        font-size: .8em;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
