@@ -1,18 +1,36 @@
 :root {
-    --background-color: #1a1a1a; /* Very dark gray (almost black) */
-    --overlay-background-color: rgba(30, 30, 30, 0.9); /* Dark gray with slight transparency */
-    --primary-text-color: #e0e0e0; /* Light gray */
-    --secondary-text-color: #b3b3b3; /* Medium gray */
-    --highlight-color: #ff6f61; /* Coral red */
-    --button-hover-color: #d9534f; /* Dark coral red */
-    --link-color: #ff6f61; /* Coral red */
-    --link-hover-color: #d9534f; /* Dark coral red */
-    --box-shadow-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    --title-gradient-start: rgba(220, 20, 60, 0.9); /* Crimson */
-    --title-gradient-end: rgba(255, 69, 0, 0.9); /* Orange-red */
-    --h3-background-color: rgba(220, 20, 60, 0.7); /* Crimson with transparency */
-    --rank-color: #ff6f61; /* Coral red */
-    --rating-color: #e0e0e0; /* Light gray */
+    /* Very dark gray (almost black) */
+    --background-color: #1a1a1a;
+    /* Dark gray with slight transparency */
+    --overlay-background-color: rgba(30, 30, 30, 0.9);
+    /* Light gray */
+    --primary-text-color: #e0e0e0;
+    /* Medium gray */
+    --secondary-text-color: #b3b3b3;
+    /* Coral red */
+    --highlight-color: #ff6f61;
+    /* Dark coral red */
+    --button-hover-color: #d9534f;
+    /* Coral red */
+    --link-color: #ff6f61;
+    /* Dark coral red */
+    --link-hover-color: #d9534f;
+    /* Semi-transparent black */
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    /* Crimson */
+    --title-gradient-start: rgba(220, 20, 60, 0.9);
+    /* Orange-red */
+    --title-gradient-end: rgba(255, 69, 0, 0.9);
+    /* Crimson with transparency */
+    --h3-background-color: rgba(220, 20, 60, 0.7);
+    /* Coral red */
+    --rank-color: #ff6f61;
+    /* Light gray */
+    --rating-color: #e0e0e0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Global Styles */
@@ -148,14 +166,15 @@ h3,
 }
 
 .links img {
-    width: clamp(5px,20px,40px);
+    width: clamp(5px, 20px, 40px);
     height: auto;
 }
 
 /* Contests and Projects */
-.projects{
-    width: clamp(200px,80%,600px);
+.projects {
+    width: clamp(200px, 80%, 600px);
 }
+
 .contests {
     display: flex;
     flex-direction: column;
@@ -186,7 +205,7 @@ h3,
     align-items: center;
     margin: 0;
     padding: 0;
-    width: clamp(400px,70%,600px);
+    width: clamp(400px, 70%, 600px);
     box-sizing: border-box;
 
 }
@@ -198,8 +217,9 @@ h3,
     padding-right: 50px;
     width: 80%;
 }
-.project_info{
-    color:var(--primary-text-color);
+
+.project_info {
+    color: var(--primary-text-color);
 }
 
 .rank {
@@ -293,6 +313,7 @@ ol {
     font-size: .9em;
     color: var(--primary-text-color);
 }
+
 @media (max-width: 700px) {
 
     .links {
@@ -304,18 +325,23 @@ ol {
 
     .links a {
         display: flex;
-        flex-direction: column;
-        flex: 1 0 45%;
+        flex-direction: row;
+
         margin: 5px;
         text-align: center;
         justify-content: center;
-        max-width:30%;
+        max-width: 30%;
 
     }
+
     .links img {
-        width: clamp(5px,20px,40px);
+        width: clamp(20px, 20px, 40px);
+        text-align: left;
+        align-items: left;
+        justify-content: left;
         height: auto;
     }
+
     .rank {
         text-align: left;
         flex: 1;
@@ -324,4 +350,3 @@ ol {
         overflow-wrap: break-word;
     }
 }
-
