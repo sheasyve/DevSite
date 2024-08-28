@@ -127,11 +127,7 @@ h3,
     margin: 0 auto;
 }
 
-.rank,
-.rating {
-    padding-left: 0;
-    width: auto;
-}
+
 
 .links a {
     color: var(--link-color);
@@ -161,93 +157,6 @@ h3,
     box-sizing: border-box;
     padding-right: 10px;
 }
-
-@media (max-width: 500px) {
-    .links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .links a {
-        flex: 1 0 45%;
-        margin: 5px;
-        text-align: center;
-    }
-
-    .contests {
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .contest {
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 10px;
-
-    }
-
-    .project_info {
-        justify-content: space-between;
-        padding-right: 50px;
-        width: 100%;
-    }
-
-    .project_info {
-        width: 70%;
-        max-width: 400px;
-        min-width: 300px;
-        box-sizing: border-box;
-        padding-right: 10px;
-    }
-
-    .contest h4 {
-        justify-content: space-between;
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        min-width: 0%;
-    }
-
-    .contest_info {
-        width: 50%;
-        max-width: 500px;
-        min-width: 100px;
-        box-sizing: border-box;
-        padding-right: 10px;
-
-    }
-
-    .rank {
-        justify-content: space-between;
-        display: block;
-        flex: 1;
-        margin-left: 50px;
-        margin-bottom: 5px;
-        text-align: left;
-        width: 100%;
-    }
-
-    .rating {
-        justify-content: space-between;
-        display: block;
-        text-align: left;
-        margin-left: 50px;
-        width: 30%;
-    }
-
-
-    .project_info {
-        margin-bottom: 5px;
-    }
-}
-
-
 
 /* Contests and Projects */
 .contests {
@@ -280,7 +189,7 @@ h3,
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: clamp(400px,70%,600px);
     box-sizing: border-box;
 
 }
@@ -289,29 +198,16 @@ h3,
     text-align: left;
     flex-basis: 40%;
     flex: 1;
-    padding-right: 60px;
-
+    padding-right: 50px;
+    width: 80%;
 }
 
 .rank {
     text-align: left;
     flex: 1;
     font-weight: bold;
-    padding-right: 40px;
+
     color: var(--rank-color);
-}
-
-.rating {
-    text-align: left;
-    flex: 1;
-    font-weight: bold;
-    color: var(--rating-color);
-}
-
-.rank,
-.rating {
-    flex-grow: 1;
-    text-align: left;
 }
 
 .projects,
@@ -398,3 +294,27 @@ ol {
     font-size: .9em;
     color: var(--primary-text-color);
 }
+@media (max-width: 700px) {
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .links a {
+        flex: 1 0 45%;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .rank {
+        text-align: left;
+        flex: 1;
+        font-weight: bold;
+        width: auto;
+        color: var(--rank-color);
+        overflow-wrap: break-word;
+    }
+}
+
