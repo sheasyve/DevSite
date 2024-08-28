@@ -1,34 +1,53 @@
+:root {
+    --background-color: #2e2e2e;
+    --overlay-background-color: rgba(50, 0, 0, 0.8);
+    --primary-text-color: #fff;
+    --secondary-text-color: #f9f1f1;
+    --highlight-color: #ffcccb;
+    --button-hover-color: #ff6347;
+    --link-color: #ffcccb;
+    --link-hover-color: #ff6347;
+    --box-shadow-color: rgba(255, 0, 0, 0.6);
+    --title-gradient-start: rgba(255, 0, 0, 0.8);
+    --title-gradient-end: rgba(255, 165, 0, 0.8);
+    --h3-background-color: rgba(255, 99, 71, 0.7);
+    --rank-color: pink;
+    --rating-color: #ffcccb;
+}
+
 /* Global Styles */
 body {
-    background-color: #2e2e2e;
+    background-color: var(--background-color);
     background-image: url('../images/bg2.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     justify-content: center;
 }
 
 .body {
-    background-color: rgba(50, 0, 0, 0.8);
-    background-size: cover; 
+    background-color: var(--overlay-background-color);
+    background-size: cover;
     padding: 10px;
     justify-content: center;
 }
 
-h2, p {
-    color: #fff;
+h2,
+p {
+    color: var(--primary-text-color);
     text-align: center;
 }
 
-h3, .info h3 {
-    border-radius: 5px; 
+h3,
+.info h3 {
+    border-radius: 5px;
     overflow: hidden;
-    color: #fff;
-    background-color: rgba(255, 99, 71, 0.7); 
+    color: var(--primary-text-color);
+    background-color: var(--h3-background-color);
     backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
-    padding: 5px; 
+    padding: 5px;
 }
 
 .info h3 {
@@ -36,12 +55,12 @@ h3, .info h3 {
 }
 
 .info h4 {
-    color: #fff;
-    background-color: rgba(255, 99, 71, 0.7); 
+    color: var(--primary-text-color);
+    background-color: var(--h3-background-color);
     backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
-    padding: 5px; 
+    padding: 5px;
 }
 
 .italic {
@@ -50,97 +69,100 @@ h3, .info h3 {
 
 .softwareattributes {
     font-style: italic;
-    color: #ffcccb; 
+    color: var(--highlight-color);
 }
 
 /* Headings and Titles */
 .titles {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(255, 165, 0, 0.8)); 
+    background: linear-gradient(135deg, var(--title-gradient-start), var(--title-gradient-end));
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.6); 
-    margin-bottom: 30px; 
+    box-shadow: 0px 4px 6px var(--box-shadow-color);
+    margin-bottom: 30px;
     backdrop-filter: blur(10px);
 }
 
 .titles h1 {
     font-size: 2.5em;
-    color: #fff;
+    color: var(--primary-text-color);
     margin: 0;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
 }
 
 .titles h2 {
     font-size: 1.5em;
-    color: #f9f1f1;
+    color: var(--secondary-text-color);
     margin-top: 10px;
-    font-weight: 300; 
+    font-weight: 300;
 }
 
 .titles a {
-    color: #ffcccb;
+    color: var(--link-color);
     text-decoration: none;
-    border-bottom: 2px solid #ff6347; 
+    border-bottom: 2px solid var(--link-color);
 }
 
 .titles a:hover {
-    color: #ff6347; 
-    border-bottom-color: #ff6347; 
+    color: var(--link-hover-color);
+    border-bottom-color: var(--link-hover-color);
 }
 
 /* Links and Menus */
 .links {
+    border-radius: 5px;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    height: auto; 
-    background-color: rgba(50, 0, 0, 0.9); 
+    height: auto;
+    background-color: var(--overlay-background-color);
     backdrop-filter: blur(10px);
-    width: 100%; 
-    max-width: 800px; 
-    padding: 10px; 
-    box-sizing: border-box; 
-    margin: 0 auto; 
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .links a {
-    color: #ffcccb;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .links a:hover {
-    color: #ff6347; 
+    color: var(--link-hover-color);
 }
 
 .links h2 {
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    text-align: center; 
-    color: #ffcccb;
+    text-align: center;
+    color: var(--link-color);
 }
 
 .links img {
-    width: 20px; 
+    width: 20px;
     height: auto;
 }
 
 @media (max-width: 700px) {
-    .links{
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
+    .links {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
+
     .contest {
         flex-direction: column;
         align-items: flex-start;
-        text-align: left;
     }
 
-    .rank {
+    .rank,
+    .rating {
         text-align: left;
         margin-top: 5px;
         width: 100%;
@@ -160,9 +182,7 @@ h3, .info h3 {
 .contest {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 10px;
+    padding: 3px;
 }
 
 .contest a {
@@ -173,53 +193,63 @@ h3, .info h3 {
     color: inherit;
     width: 100%;
     box-sizing: border-box;
-}
-
-.project_info {
-    flex: 1;
-    color: #fff;
-    text-decoration: none;
-    font-weight: normal;
-    text-align: left;
-}
-
-.rank {
-    flex: 1;
-    font-weight: bold;
-    color: pink;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 20px;
 }
 
 .contest h4 {
-    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project_info {
     text-align: left;
+    flex-basis: 20%;
+    flex: 1;
 }
 
-.projects, .contests {
+.rank {
+    text-align: center;
+    flex: 1;
+    font-weight: bold;
+    color: var(--rank-color);
+}
+
+.rating {
+    text-align: center;
+    flex: 1;
+    font-weight: bold;
+    color: var(--rating-color);
+}
+
+.projects,
+.contests {
     padding-left: 10px;
-    color: #fff;
-    text-decoration: none; 
-}
-
-.contest:hover {
+    color: var(--primary-text-color);
     text-decoration: none;
 }
 
-.projects h4, .contests h4 {
-    color: #ffcccb; 
-    text-decoration: none; 
+.contest:hover {
+    text-decoration: underline;
+}
+
+.projects h4,
+.contests h4 {
+    color: var(--highlight-color);
+    text-decoration: none;
 }
 
 /* Lists and Highlighting */
 .numlist li::marker {
-    color: #ffcccb; 
+    color: var(--highlight-color);
 }
 
 .bulletlist li::marker {
-    color: #ffcccb; 
+    color: var(--highlight-color);
 }
 
 .langs {
@@ -228,42 +258,55 @@ h3, .info h3 {
 }
 
 .langs li {
-    margin: 5px 0; 
-    color: #fff;
+    margin: 5px 0;
+    color: var(--primary-text-color);
 }
 
 .assignments {
     padding-left: 10px;
-    color: #fff;
+    text-decoration: none;
+    color: var(--primary-text-color);
 }
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/*
+.assignment:hover {
+    text-decoration: underline;
+}*/
+
 .project-link {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-link:hover {
     text-decoration: underline;
 }
+
 .titles a:hover {
     text-decoration: underline;
 }
+
 .highlight {
-    color: #ffcccb; 
+    color: var(--highlight-color);
     font-weight: bold;
-    text-decoration: underline; 
 }
 
 .proficiency {
     font-weight: bold;
     font-size: 0.9em;
-    color: #ffcccb; 
+    color: var(--highlight-color);
 }
 
 ol {
-    color: #ffcccb; 
+    color: var(--highlight-color);
 }
 
-.info ol li, .info ul li {
-    font-size: .9em; 
-    color: rgb(255, 255, 255);
+.info ol li,
+.info ul li {
+    font-size: .9em;
+    color: var(--primary-text-color);
 }
