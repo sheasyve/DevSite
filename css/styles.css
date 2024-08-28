@@ -1,18 +1,18 @@
 :root {
-    --background-color: #2e2e2e;
-    --overlay-background-color: rgba(50, 0, 0, 0.8);
-    --primary-text-color: #fff;
-    --secondary-text-color: #f9f1f1;
-    --highlight-color: #ffcccb;
-    --button-hover-color: #ff6347;
-    --link-color: #ffcccb;
-    --link-hover-color: #ff6347;
-    --box-shadow-color: rgba(255, 0, 0, 0.6);
-    --title-gradient-start: rgba(255, 0, 0, 0.8);
-    --title-gradient-end: rgba(255, 165, 0, 0.8);
-    --h3-background-color: rgba(255, 99, 71, 0.7);
-    --rank-color: pink;
-    --rating-color: #ffcccb;
+    --background-color: #1a1a1a; /* Darker background */
+    --overlay-background-color: rgba(30, 30, 30, 0.9); /* Dark overlay */
+    --primary-text-color: #e0e0e0; /* Light gray for text */
+    --secondary-text-color: #b3b3b3; /* Medium gray for secondary text */
+    --highlight-color: #ff6f61; /* Coral red highlight */
+    --button-hover-color: #d9534f; /* Darker coral red for hover */
+    --link-color: #ff6f61; /* Coral red for links */
+    --link-hover-color: #d9534f; /* Darker coral red on hover */
+    --box-shadow-color: rgba(0, 0, 0, 0.5); /* Subtle black shadow */
+    --title-gradient-start: rgba(220, 20, 60, 0.9); /* Crimson gradient start */
+    --title-gradient-end: rgba(255, 69, 0, 0.9); /* Orange-red gradient end */
+    --h3-background-color: rgba(220, 20, 60, 0.7); /* Crimson background for h3 */
+    --rank-color: #ff6f61; /* Coral red for rank */
+    --rating-color: #e0e0e0; /* Light gray for rating */
 }
 
 /* Global Styles */
@@ -28,6 +28,8 @@ body {
 .body {
     background-color: var(--overlay-background-color);
     background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
     padding: 10px;
     justify-content: center;
 }
@@ -150,15 +152,12 @@ h3,
     height: auto;
 }
 
-.contest_info {
-    width: 70%;
-    max-width: 600px;
-    min-width: 400px;
-    box-sizing: border-box;
-    padding-right: 10px;
-}
+
 
 /* Contests and Projects */
+.projects{
+    width: clamp(200px,80%,600px);
+}
 .contests {
     display: flex;
     flex-direction: column;
@@ -194,20 +193,22 @@ h3,
 
 }
 
-.project_info {
+.contest_info {
     text-align: left;
     flex-basis: 40%;
     flex: 1;
     padding-right: 50px;
     width: 80%;
 }
+.project_info{
+    color:var(--primary-text-color);
+}
 
 .rank {
     text-align: left;
     flex: 1;
     font-weight: bold;
-
-    color: var(--rank-color);
+    color: var(--primary-text-color);
 }
 
 .projects,
@@ -313,7 +314,6 @@ ol {
         flex: 1;
         font-weight: bold;
         width: auto;
-        color: var(--rank-color);
         overflow-wrap: break-word;
     }
 }
