@@ -130,7 +130,6 @@ h3,
 .rank,
 .rating {
     padding-left: 0;
-    /* Remove any padding on the left */
     width: auto;
 }
 
@@ -157,16 +156,10 @@ h3,
 
 .contest_info {
     width: 70%;
-    /* Set a consistent width, adjust as needed */
     max-width: 600px;
-    /* Optional: Set a max width to ensure it doesn't get too wide */
     min-width: 400px;
-    /* Optional: Set a minimum width for smaller screens */
     box-sizing: border-box;
-    /* Ensure padding and borders are included in the width */
     padding-right: 10px;
-    /* Adjust padding to provide spacing */
-
 }
 
 @media (max-width: 500px) {
@@ -318,9 +311,7 @@ h3,
 .rank,
 .rating {
     flex-grow: 1;
-    /* Allow these elements to grow and fill the remaining space */
     text-align: left;
-    /* Ensure text alignment is consistent */
 }
 
 .projects,
