@@ -229,7 +229,7 @@ h3,
 }
 
 .rank {
-    margin-left:auto; 
+    
     margin-right:auto; 
     text-align: left;
     flex: 1;
@@ -355,16 +355,16 @@ ol {
     body {
         margin: 0 2vw; 
     }
-}
-
-@media (min-width: 1024px) {
-    body {
-        margin: 0 7vw; 
+    .rank{
+        margin-left:4vw; 
     }
 }
 
 @media (min-width: 1440px) {
     body {
         margin: 0 23vw; 
+    }
+    .rank{
+        margin-left:5vw; 
     }
 }
