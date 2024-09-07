@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 :root {
     /* Very dark gray (almost black) */
     --background-color: #1a1a1a;
@@ -109,6 +114,8 @@ h3,
     color: var(--primary-text-color);
     margin: 0;
     letter-spacing: 1px;
+    font-family: Raleway;
+    font-weight: bold;
 }
 
 .titles h2 {
@@ -233,9 +240,12 @@ h3,
     text-align: left;
     flex: 1;
     margin-left: 3vw;
-    font-weight: bold;
     color: var(--primary-text-color);
     display: block;
+}
+.rank b {
+    font-weight: 800; /* Make sure this is heavier than normal */
+    color: var(--highlight-color); /* You can keep or change this color */
 }
 
 .projects,
@@ -346,7 +356,7 @@ ol {
     .rank {
         text-align: left;
         flex: 1;
-        font-weight: bold;
+ 
         width: auto;
         overflow-wrap: break-word;
     }
