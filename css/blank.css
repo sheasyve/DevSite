@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    /* Very dark gray (almost black) */
+    --background-color: #1a1a1a;
+    /* Dark gray with slight transparency */
+    --overlay-background-color: rgba(30, 30, 30, 0.9);
+    /* Light gray */
+    --primary-text-color: #e0e0e0;
+    /* Medium gray */
+    --secondary-text-color: #b3b3b3;
+    /* Coral red */
+    --highlight-color: #ff6f61;
+    /* Dark coral red */
+    --button-hover-color: #d9534f;
+    /* Coral red */
+    --link-color: #ff6f61;
+    /* Dark coral red */
+    --link-hover-color: #d9534f;
+    /* Semi-transparent black */
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    /* Crimson */
+    --title-gradient-start: rgba(220, 20, 60, 0.9);
+    /* Orange-red */
+    --title-gradient-end: rgba(255, 69, 0, 0.9);
+    /* Crimson with transparency */
+    --h3-background-color: rgba(220, 20, 60, 0.7);
+    /* Coral red */
+    --rank-color: #ff6f61;
+    /* Light gray */
+    --rating-color: #e0e0e0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--background-color);
+    background-image: url('../images/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+}
+
+.body {
+    background-color: var(--overlay-background-color);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: center;
+}
+
+h2,
+p {
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+h3,
+.info h3 {
+    border-radius: 5px;
+    overflow: hidden;
+    color: var(--primary-text-color);
+    background-color: var(--h3-background-color);
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.info h3 {
+    font-size: 1.1em;
+}
+
+.info h4 {
+    color: var(--primary-text-color);
+    background-color: var(--h3-background-color);
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+/* Headings and Titles */
+.titles {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--title-gradient-start), var(--title-gradient-end));
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px var(--box-shadow-color);
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.titles h1 {
+    font-size: 2.5em;
+    color: var(--primary-text-color);
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.titles h2 {
+    font-size: 1.5em;
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.titles a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--link-color);
+}
+
+.titles a:hover {
+    color: var(--link-hover-color);
+    border-bottom-color: var(--link-hover-color);
+}
+
+/* Links and Menus */
+.links {
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+    background-color: var(--overlay-background-color);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.links a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--link-hover-color);
+}
+
+.links h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--link-color);
+}
+
+.links img {
+    width: clamp(5px, 20px, 40px);
+    height: auto;
+}
+
+/* Lists and Highlighting */
+.numlist li::marker {
+    color: var(--highlight-color);
+}
+
+.bulletlist li::marker {
+    color: var(--highlight-color);
+}
+
+.langs {
+    margin: 0;
+    padding: 0;
+}
+
+.langs li {
+    margin: 5px 0;
+    color: var(--primary-text-color);
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.titles a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+ol {
+    color: var(--highlight-color);
+}
+
+.info img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.info ol li,
+.info ul li {
+    font-size: .9em;
+    color: var(--primary-text-color);
+}
+
+@media (max-width: 700px) {
+    .titles {
+        font-size: .8em;
+    }
+
+    .links {
+        text-decoration: underline;
+        text-decoration-color: white;
+        font-size: .8em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .links img {
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 0 2vw;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 0 10vw;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    body {
+        margin: 0 23vw;
+    }
+
+}
