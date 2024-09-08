@@ -292,7 +292,14 @@ h3,
     text-decoration: none;
     color: var(--primary-text-color);
 }
-
+.assignments a, .assignments h4{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.assignments a:hover, .assignments h4:hover{
+    text-decoration: underline;
+    text-decoration-color: --highlight-color;
+}
 .links a:hover {
     text-decoration: underline;
 }
