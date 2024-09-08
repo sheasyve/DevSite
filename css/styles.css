@@ -32,6 +32,8 @@
     --rank-color: #ff6f61;
     /* Light gray */
     --rating-color: #e0e0e0;
+    /* Light red*/
+    --mobile-underline-color:rgba(218, 130, 130, 0.678);
 }
 
 html {
@@ -186,44 +188,46 @@ h3,
 .contests {
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
+    margin:0;
    
 }
 
 .contest {
-
-    display: flex;
-    padding-bottom: 3px;
-    
-}
-
-.contest a {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
-    box-sizing: border-box;
-    margin-right: 30px;
-
-}
-
-.contest h4 {
     display: flex;
     justify-content: space-between;
-    align-items: left;
-    margin: 0;
-    
-    width: clamp(500px, 100%, 900px);
+    align-items: center;
+    flex-direction: row;
+    margin-left:1vw;
+    margin-right:1vw;
+}
 
+.contest:not(:last-child) {
+    margin-bottom: .5vw; 
+}
+.contest:not(:first-child) {
+    margin-top: .5vw; 
+}
+.contest a, .contest h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: clamp(200px, 100%, 700px);
+    text-decoration: none;
+    color:inherit;
     box-sizing: border-box;
     position: relative;
 
 }
 
 .contest_info {
+    
+    flex: 2 1 0;
+    min-width: 50%; 
+    width:100%;
+    padding-right: 1vw;
     text-align: left;
-    flex: 1;
     
 }
 
@@ -232,22 +236,40 @@ h3,
     
 }
 .projects h4,.assignments h4{
-    padding: 3px;
+    margin: 1vw;
+}
+
+.rank, .rating {
+    line-height: normal; 
+    align-self: center; 
+    height: auto; 
+    display: flex; 
+    align-items: center; 
+    padding-right: vw; 
 }
 
 .rank {
-    
     text-align: left;
     flex: 1;
-    margin-left: 3vw;
+    min-width: 50%; 
     color: var(--primary-text-color);
-    display: block;
 }
-.rank b {
-    font-weight: 800; /* Make sure this is heavier than normal */
-    color: var(--highlight-color); /* You can keep or change this color */
+.rank b ,.rating b{
+    margin-left: 5px; 
 }
 
+.rating {
+    text-align: center;
+    flex: 1;
+    min-width: 15%;
+    color: var(--primary-text-color);
+    width: fit-content;
+}
+
+.rating b,.rank b {
+    font-weight: 800; 
+    color: var(--highlight-color); 
+}
 .projects,
 .contests {
     padding-left: 10px;
@@ -266,8 +288,11 @@ h3,
     text-decoration: none;
     
     
+    
 }
-
+.projects h4{
+    width: 100%;
+}
 /* Lists and Highlighting */
 .numlist li::marker {
     color: var(--highlight-color);
@@ -344,12 +369,16 @@ ol {
 }
 
 @media (max-width: 700px) {
+    .contest_info,.highlight{
+        text-decoration: underline;
+        text-decoration-color: var(--mobile-underline-color);
+    }
     .titles{
         font-size: .8em;
     }
     .links {
         text-decoration: underline;
-        text-decoration-color: white;
+        text-decoration-color: var(--mobile-underline-color);
         font-size: .8em;
         display: flex;
         flex-wrap: wrap;
@@ -385,7 +414,7 @@ ol {
 
 @media (min-width: 1440px) {
     body {
-        margin: 0 23vw; 
+        margin: 0 30vw; 
     }
 
 }
