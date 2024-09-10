@@ -182,7 +182,7 @@ h3,
 
 /* Contests and Projects */
 .projects {
-    width: clamp(200px, 80%, 600px);
+    width: clamp(200px, 100%, 800px);
 }
 
 .contests {
@@ -213,7 +213,7 @@ h3,
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    width: clamp(200px, 100%, 700px);
+    width: clamp(200px, 100%, 900px);
     text-decoration: none;
     color:inherit;
     box-sizing: border-box;
