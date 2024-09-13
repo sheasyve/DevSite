@@ -220,7 +220,7 @@ h3,
 .rank {
     text-align: left;
     flex: 1;
-    min-width: 50%; 
+    min-width: 40%; 
     color: var(--primary-text-color);
 }
 .rank b ,.rating b{
