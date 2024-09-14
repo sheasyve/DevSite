@@ -206,6 +206,7 @@ h3,
 }
 .projects h4,.assignments h4{
     margin: 1vw;
+    max-width: 95%;
 }
 
 .rank, .rating {
@@ -219,7 +220,7 @@ h3,
 
 .rank {
     text-align: left;
-    min-width: 45%;
+    min-width: 55%;
     flex: 1;
     color: var(--primary-text-color);
 }
