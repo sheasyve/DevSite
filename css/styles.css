@@ -117,7 +117,7 @@ h3,
     align-items: center;
     gap: 20px;
     height: auto;
-    background-color: var(--overlay-background-color);
+    background: linear-gradient(45deg,var(--link-gradient-start),var(--link-gradient-end)); /* Example gradient */
     backdrop-filter: blur(10px);
     width: 100%;
     max-width: 800px;
@@ -220,7 +220,7 @@ h3,
 
 .rank {
     text-align: left;
-    min-width: 55%;
+    min-width: 65%;
     flex: 1;
     color: var(--primary-text-color);
 }
@@ -377,6 +377,15 @@ ol {
     body {
         margin: 0 10vw; 
     }
+    .rank{
+        min-width: 35%;
+    }
+    .contest_info{
+        min-width: 55%;
+
+
+    }
+
 
 }
 
@@ -384,5 +393,13 @@ ol {
     body {
         margin: 0 30vw; 
     }
+    .rank{
+        min-width: 35%;
+    }
+    .contest_info{
+        min-width: 55%;
 
+
+    }
+   
 }

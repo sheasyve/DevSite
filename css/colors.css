@@ -3,32 +3,36 @@
     --background-color: #1a1a1a;
     /* Dark gray with slight transparency */
     --overlay-background-color: rgba(30, 30, 30, 0.9);
+    --overlay-background-color2: rgba(92, 72, 72, 0.247);
     /* Light gray */
     --primary-text-color: #e0e0e0;
     /* Medium gray */
     --secondary-text-color: #b3b3b3;
-    /* Coral red */
-    --highlight-color: #ff7b71;
-    /* Dark coral red */
-    --highlight-color2: #ff6f61;
-    /* Dark coral red */
-    --button-hover-color: #d9534f;
-    /* Coral red */
-    --link-color: #ff695c;
-    /* Dark coral red */
-    --link-hover-color: #d9534f;
+    /* Muted crimson */
+    --highlight-color: #cc444b;
+    /* Dark crimson */
+    --highlight-color2: #a63234;
+    /* Muted crimson for buttons */
+    --button-hover-color: #a63234;
+    /* White for links */
+    --link-color: #ffffff;
+    /* Light gray for link hover */
+    --link-hover-color: #dddddd;
     /* Semi-transparent black */
     --box-shadow-color: rgba(0, 0, 0, 0.5);
-    /* Crimson */
-    --title-gradient-start: rgba(220, 20, 60, 0.9);
-    /* Orange-red */
-    --title-gradient-end: rgba(255, 69, 0, 0.9);
-    /* Crimson with transparency */
-    --h3-background-color: rgba(220, 20, 60, 0.7);
-    /* Coral red */
-    --rank-color: #ff6f61;
+    /* Dark red gradient */
+    --title-gradient-start: rgba(120, 15, 20, 0.9);
+    --title-gradient-end: rgba(60, 5, 10, 0.9);
+
+    /* Updated more muted link gradient */
+    --link-gradient-start: #361e1e; /* Dark gray */
+    --link-gradient-end: #4f4f4f;   /* Slightly lighter gray */
+    /* Dark crimson with transparency */
+    --h3-background-color: rgba(120, 15, 20, 0.7);
+    /* Muted crimson */
+    --rank-color: #cc444b;
     /* Light gray */
     --rating-color: #e0e0e0;
-    /* Light red*/
-    --mobile-underline-color:rgba(247, 162, 162, 0.63);
+    /* Light red for underline */
+    --mobile-underline-color:rgba(255, 85, 85, 0.6);
 }
