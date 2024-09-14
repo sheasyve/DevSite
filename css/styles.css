@@ -193,7 +193,7 @@ h3,
 .contest_info {
     
     flex: 2 1 0;
-    min-width: 60%; 
+    min-width: 50%; 
     width:100%;
     padding-right: 1vw;
     text-align: left;
@@ -220,7 +220,7 @@ h3,
 .rank {
     text-align: left;
     flex: 1;
-    min-width: 40%; 
+    min-width: 35%; 
     color: var(--primary-text-color);
 }
 .rank b ,.rating b{
