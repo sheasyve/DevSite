@@ -4,6 +4,7 @@ Fix at some point.*/
      /* Very dark gray (almost black) background */
     --background-color: #1a1a1a;
     /* Dark gray with slight transparency overlay background */
+    --main-background-color: rgba(30, 30, 30, 0.411);
     --overlay-background-color: rgba(30, 30, 30, 0.63);
     --overlay-background-color2: rgba(92, 72, 72, 0.247);
     /* Light gray primary text */
