@@ -21,8 +21,8 @@
     /* Semi-transparent black */
     --box-shadow-color: rgba(0, 0, 0, 0.5);
     /* Dark red gradient */
-    --title-gradient-start: #802f2f;
-    --title-gradient-end:#3d2424;
+    --title-gradient-start: #1a0f0f;
+    --title-gradient-end:#802f2f;
     --title-gradient-start2: rgba(10, 7, 7, 0.63);
     --title-gradient-end2: rgba(80, 30, 30, 0.658);
     /* Updated more muted link gradient */
