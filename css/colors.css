@@ -1,42 +1,44 @@
+/*The Colors titles are not all completely correct because I was going fast.
+Fix at some point.*/
 :root {
-    /* Very dark gray (almost black) */
+     /* Very dark gray (almost black) background */
     --background-color: #1a1a1a;
-    /* Dark gray with slight transparency */
+    /* Dark gray with slight transparency overlay background */
     --overlay-background-color: rgba(30, 30, 30, 0.63);
     --overlay-background-color2: rgba(92, 72, 72, 0.247);
-    /* Light gray */
+    /* Light gray primary text */
     --primary-text-color: #e0e0e0;
-    /* Medium gray */
+    /* Medium gray secondary text */
     --secondary-text-color: #b3b3b3;
-    /* Muted crimson */
+    /* Muted crimson for highlights */
     --highlight-color: #cc444b;
-    /* Dark crimson */
+    /* Dark crimson for alternate highlights */
     --highlight-color2: #cc444b;
-    /* Muted crimson for buttons */
+    /* Muted crimson for button hover state */
     --button-hover-color: #a63234;
     /* White for links */
     --link-color: #ffffff;
-    /* Light gray for link hover */
+    /* Light gray for link hover state */
     --link-hover-color: #dddddd;
-    /* Semi-transparent black */
+    /* Semi-transparent black for box shadows */
     --box-shadow-color: rgba(0, 0, 0, 0.5);
     /* Dark red gradient */
     --title-gradient-start: #886a6a;
-    --title-gradient-end:#802f2f;
+    --title-gradient-end: #802f2f;
     --title-gradient-start2: rgba(10, 7, 7, 0.63);
     --title-gradient-end2: rgba(80, 30, 30, 0.658);
     /* Updated more muted link gradient */
-    --link-gradient-start:#802f2f54;
-    --link-gradient-end:  #301e1e;
+    --link-gradient-start: #802f2f54;
+    --link-gradient-end: #301e1e;
     /* Dark crimson with transparency */
     --h3-background-color: rgba(12, 2, 2, 0.63);
     --h3-background-color2: #802f2f;
-    --h3-background-color3:  rgba(30, 30, 30, 0.63);
+    --h3-background-color3: rgba(30, 30, 30, 0.63);
     --h3-background-color4: rgba(30, 30, 30, 0.63);
     /* Muted crimson */
     --rank-color: #cc444b;
     /* Light gray */
     --rating-color: #e0e0e0;
     /* Light red for underline */
-    --mobile-underline-color:rgba(255, 85, 85, 0.6);
+    --mobile-underline-color: rgba(255, 85, 85, 0.6);
 }
