@@ -34,7 +34,9 @@ Fix at some point.*/
     --h3-background-color: rgba(12, 2, 2, 0.63);
     --h3-background-color2: #802f2f;
     --h3-background-color3: rgba(30, 30, 30, 0.63);
-    --h3-background-color4: rgba(30, 30, 30, 0.63);
+    --h3-background-color4: rgba(15, 8, 8, 0.63);
+    --h3-background-color5: #802f2f00;
+    --h3-background-color6: #61343452;
     /* Muted crimson */
     --rank-color: #cc444b;
     /* Light gray */
