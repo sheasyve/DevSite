@@ -26,8 +26,8 @@
     --title-gradient-start2: rgba(10, 7, 7, 0.63);
     --title-gradient-end2: rgba(80, 30, 30, 0.658);
     /* Updated more muted link gradient */
-    --link-gradient-start:#802f2f;
-    --link-gradient-end:  #3d2424;
+    --link-gradient-start:#802f2f54;
+    --link-gradient-end:  #301e1e;
     /* Dark crimson with transparency */
     --h3-background-color: rgba(12, 2, 2, 0.63);
     --h3-background-color2: #802f2f;
