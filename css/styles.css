@@ -350,7 +350,22 @@ ol {
 }
 
 @media (max-width: 700px) {
-    .contest_info,.highlight{
+   
+    .contest_info{
+            min-width: 50%;
+
+    }
+    .contest .project_info{
+        text-decoration: underline;
+        text-decoration-color: var(--mobile-underline-color);
+    }
+    .rank{
+        margin-left: 10px;
+        min-width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .highlight{
         text-decoration: underline;
         text-decoration-color: var(--mobile-underline-color);
     }
