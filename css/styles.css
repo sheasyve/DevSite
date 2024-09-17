@@ -35,25 +35,36 @@ p {
     text-align: center;
 }
 
-h3,
-.info h3 {
+
+
+
+h3 {
     border-radius: 5px;
     overflow: hidden;
     color: var(--primary-text-color);
-    background-color: var(--h3-background-color);
+    background: linear-gradient(135deg, var(--h3-background-color2),var(--h3-background-color));
     backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
 }
-
+.info h3 {
+    border-radius: 5px;
+    overflow: hidden;
+    color: var(--primary-text-color);
+    background: linear-gradient(135deg, var(--h3-background-color3),var(--h3-background-color4));
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
 .info h3 {
     font-size: 1.1em;
 }
 
 .info h4 {
     color: var(--primary-text-color);
-    background-color: var(--h3-background-color);
+    
     backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +84,7 @@ h3,
 .titles {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, var(--title-gradient-start), var(--title-gradient-end));
+    background: linear-gradient(0deg, var(--title-gradient-start), var(--title-gradient-end));
     border-radius: 10px;
     box-shadow: 0px 4px 6px var(--box-shadow-color);
     margin-bottom: 30px;
@@ -99,7 +110,7 @@ h3,
 .titles a {
     color: var(--primary-text-color);
     text-decoration: none;
-    border-bottom: 2px solid var(--link-color);
+
 }
 
 .titles a:hover {
@@ -117,16 +128,15 @@ h3,
     align-items: center;
     gap: 20px;
     height: auto;
-    background: linear-gradient(45deg,var(--link-gradient-start),var(--link-gradient-end)); /* Example gradient */
+    background: linear-gradient(180deg,var(--link-gradient-start),var(--link-gradient-end)); /* Example gradient */
     backdrop-filter: blur(10px);
     width: 100%;
     max-width: 800px;
     padding: 10px;
     box-sizing: border-box;
     margin: 0 auto;
+    box-shadow: 0px 4px 6px var(--box-shadow-color);
 }
-
-
 
 .links a {
     color: var(--link-color);
@@ -200,8 +210,9 @@ h3,
     
 }
 
+
 .project_info {
-    color: var(--primary-text-color);
+    color: var(--highlight-color);
     
 }
 .projects h4,.assignments h4{
@@ -226,6 +237,7 @@ h3,
 }
 .rank b ,.rating b{
     margin-left: 5px; 
+    margin-right: 5px; 
 }
 
 .rating {
@@ -245,6 +257,7 @@ h3,
     padding-left: 10px;
     color: var(--primary-text-color);
     text-decoration: none;
+
     
 }
 
@@ -254,7 +267,7 @@ h3,
 
 .projects h4,
 .contests h4 {
-    color: var(--highlight-color);
+    color: var(--primary-text-color);
     text-decoration: none;
     
 }
@@ -362,17 +375,17 @@ ol {
     .rank {
         text-align: left;
         flex: 1;
- 
         width: auto;
         overflow-wrap: break-word;
     }
 }
+
 @media (min-width: 768px) {
     body {
         margin: 0 2vw; 
     }
-
 }
+
 @media (min-width: 1024px) {
     body {
         margin: 0 10vw; 
@@ -382,11 +395,11 @@ ol {
     }
     .contest_info{
         min-width: 55%;
-
-
     }
-
-
+    .links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -398,8 +411,5 @@ ol {
     }
     .contest_info{
         min-width: 55%;
-
-
-    }
-   
+    }  
 }
