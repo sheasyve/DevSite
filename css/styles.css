@@ -162,7 +162,7 @@ h3,info h3{
 .contests {
     display: flex;
     flex-direction: column;
-    margin:0;
+
    
 }
 
@@ -171,21 +171,14 @@ h3,info h3{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin-left:1vw;
-    margin-right:1vw;
+
 }
 
-.contest:not(:last-child) {
-    margin-bottom: .5vw; 
-}
-.contest:not(:first-child) {
-    margin-top: .5vw; 
-}
 .contest a, .contest h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    padding: 1px;
     width: clamp(200px, 100%, 900px);
     text-decoration: none;
     color:var(--primary-text-color);
@@ -209,10 +202,7 @@ h3,info h3{
     color: var(--highlight-color);
     
 }
-.projects h4,.assignments h4{
-    margin: 1vw;
-    max-width: 95%;
-}
+
 
 .rank, .rating {
     line-height: normal; 
@@ -260,20 +250,24 @@ h3,info h3{
     color: var(--primary-text-color);
     text-decoration: none;
 }
-.contests{
-    padding-bottom: 1vw;
-}
+
 
 .contest:hover {
     text-decoration: underline;
 }
-
+.projects h4,.assignments h4,.contests h4{
+    margin: 1vw;
+    margin-top: 0vw;
+    margin-bottom: 1vw;
+    max-width: 95%;
+}
 .projects h4,
 .contests h4 {
     color: var(--primary-text-color);
     text-decoration: none;
-    
+
 }
+
 .projects h4{
     width: 100%;
 }
@@ -412,6 +406,11 @@ ol {
         width: auto;
         overflow-wrap: break-word;
     }
+    .projects h4,.assignments h4,.contests h4{
+        margin: 1.5vw;
+        margin-top: 0vw;
+        margin-bottom: 1.5vw;
+    }
 }
 
 @media (min-width: 768px) {
@@ -446,4 +445,5 @@ ol {
     .contest_info{
         min-width: 55%;
     }  
+    
 }
