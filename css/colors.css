@@ -1,48 +1,58 @@
-/*The Colors titles are not all completely correct because I was going fast.
-Fix at some point.*/
+/* Root variables for colors and styles */
 :root {
-     /* Very dark gray (almost black) background */
+    /* Dark gray (almost black) background */
     --background-color: #1a1a1a;
-    /* Dark gray with slight transparency overlay background */
+    /* Slightly transparent dark overlay background */
     --main-background-color: rgba(0, 0, 0, 0.61);
     --main-background-color2: rgba(248, 248, 248, 0.13);
     --overlay-background-color: rgba(30, 30, 30, 0.63);
     --overlay-background-color2: rgba(92, 72, 72, 0.247);
-    /* Light gray primary text */
+    
+    /* Light gray text for primary content */
     --primary-text-color: #e0e0e0;
-    /* Medium gray secondary text */
+    /* Medium gray for secondary text */
     --secondary-text-color: #b3b3b3;
-    /* Muted crimson for highlights */
+    
+    /* Crimson for highlights */
     --highlight-color: #cc444b;
-    /* Dark crimson for alternate highlights */
+    /* Alternate crimson for highlights */
     --highlight-color2: #cc444b;
-    /* Muted crimson for button hover state */
+    /* Crimson for button hover state */
     --button-hover-color: #a63234;
-    /* White for links */
+    
+    /* White for link text */
     --link-color: #ffffff;
     /* Light gray for link hover state */
     --link-hover-color: #dddddd;
-    /* Semi-transparent black for box shadows */
+    
+    /* Semi-transparent black for shadows */
     --box-shadow-color: rgba(0, 0, 0, 0.5);
-    /* Dark red gradient */
-    --title-gradient-start:#5a0202;
-    --title-gradient-end:  #be6060;
+    
+    /* Gradient for title with dark red tones */
+    --title-gradient-start: #5a0202;
+    --title-gradient-end: #be6060;
     --title-gradient-start2: rgba(10, 7, 7, 0.63);
     --title-gradient-end2: #501e1ea8;
-    /* Updated more muted link gradient */
+    
+    /* Muted link gradient with crimson tones */
     --link-gradient-start: #703b3b;
     --link-gradient-end: #5a0202;
-    /* Dark crimson with transparency */
+    
+    /* Transparent dark crimson background for headers */
     --h3-background-color: rgba(12, 2, 2, 0.63);
     --h3-background-color2: #802f2f;
     --h3-background-color3: rgba(30, 30, 30, 0.63);
     --h3-background-color4: rgba(15, 8, 8, 0.63);
-    --h3-background-color5: #802f2f00;
-    --h3-background-color6: #61343452;
-    /* Muted crimson */
+    
+    /* Transparent sections with dark red tones */
+    --section1-color1: #802f2f00;
+    --section1-color2: #61343452;
+    
+    /* Crimson for ranks or badges */
     --rank-color: #cc444b;
-    /* Light gray */
+    /* Light gray for ratings or scores */
     --rating-color: #e0e0e0;
-    /* Light red for underline */
+    
+    /* Light red for underline on mobile */
     --mobile-underline-color: rgba(221, 148, 148, 0.6);
 }

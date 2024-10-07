@@ -29,14 +29,10 @@ body {
     justify-content: center;
 }
 
-h2,
-p {
+h2, p {
     color: var(--primary-text-color);
     text-align: center;
 }
-
-
-
 
 h3,.info h3{
     border-radius: 5px;
@@ -45,13 +41,11 @@ h3,.info h3{
     background: linear-gradient(135deg, var(--h3-background-color2),var(--h3-background-color));
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
     margin-bottom: 1vw;
 }
-
 
 .info h3 {
     font-size: 1.1em;
@@ -60,7 +54,6 @@ h3,.info h3{
 
 .info h4 {
     color: var(--primary-text-color);
-    
     backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
@@ -125,7 +118,7 @@ h3,.info h3{
     align-items: center;
     gap: 20px;
     height: auto;
-    background: linear-gradient(180deg,var(--link-gradient-start),var(--link-gradient-end)); /* Example gradient */
+    background: linear-gradient(180deg,var(--link-gradient-start),var(--link-gradient-end)); 
     backdrop-filter: blur(10px);
     width: 100%;
     max-width: 800px;
@@ -164,8 +157,6 @@ h3,.info h3{
 .contests {
     display: flex;
     flex-direction: column;
-
-   
 }
 
 .contest {
@@ -173,7 +164,6 @@ h3,.info h3{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-
 }
 
 .contest a, .contest h4 {
@@ -186,25 +176,19 @@ h3,.info h3{
     color:var(--primary-text-color);
     box-sizing: border-box;
     position: relative;
-
 }
 
 .contest_info {
-    
     flex: 2 1 0;
     min-width: 45%; 
     width:100%;
     padding-right: 1vw;
     text-align: left;
-    
 }
-
 
 .project_info {
     color: var(--highlight-color);
-    
 }
-
 
 .rank, .rating {
     line-height: normal; 
@@ -238,14 +222,15 @@ h3,.info h3{
     font-weight: 800; 
     color: var(--highlight-color2); 
 }
-.section1{
 
-    background: linear-gradient(135deg, var(--h3-background-color6),var(--h3-background-color5));
+.section1{
+    background: linear-gradient(135deg, var(--section1-color1),var(--section1-color2));
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: 0px 4px 6px var(--box-shadow-color);
     padding-bottom: .1vw;
 }
+
 .projects,
 .contests {
     padding-left: 10px;
@@ -253,26 +238,27 @@ h3,.info h3{
     text-decoration: none;
 }
 
-
 .contest:hover {
     text-decoration: underline;
 }
+
 .projects h4,.assignments h4,.contests h4{
     margin: 1vw;
     margin-top: 0vw;
     margin-bottom: 1vw;
     max-width: 95%;
 }
+
 .projects h4,
 .contests h4 {
     color: var(--primary-text-color);
     text-decoration: none;
-
 }
 
 .projects h4{
     width: 100%;
 }
+
 /* Lists and Highlighting */
 .numlist li::marker {
     color: var(--highlight-color);
@@ -281,27 +267,24 @@ h3,.info h3{
 .bulletlist li::marker {
     color: var(--highlight-color);
 }
+
 .list{
-    background-color: antiquewhite;
     background: linear-gradient(135deg, var(--h3-background-color6),var(--h3-background-color5));
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    box-shadow: 0px 4px 6px var(--box-shadow-color);
-    
+    box-shadow: 0px 4px 6px var(--box-shadow-color);  
 }
 
 .numlist,.bulletlist{
     padding-bottom: .5vw;
-
     font-size:large;
     font-weight: bold;
     padding-top:0;
 }
+
 ol,ul{
     margin-block-start: 0;
-    
 }
-
 
 .langs {
     margin: 0;
@@ -313,28 +296,25 @@ ol,ul{
     color: var(--primary-text-color);
 }
 
-
 .assignments {
     padding-left: 10px;
     text-decoration: none;
     color: var(--primary-text-color);
 }
+
 .assignments a{
     color: var(--primary-text-color);
     text-decoration: none;
 }
+
 .assignments a:hover{
     text-decoration: underline;
-    text-decoration-color: --highlight-color;
+    text-decoration-color: var(--highlight-color);
 }
+
 .links a:hover {
     text-decoration: underline;
 }
-
-/*
-.assignment:hover {
-    text-decoration: underline;
-}*/
 
 .project-link {
     text-decoration: none;
@@ -376,23 +356,28 @@ ol {
             min-width: 50%;
 
     }
+    
     .contest .project_info{
         text-decoration: underline;
         text-decoration-color: var(--mobile-underline-color);
     }
+
     .rank{
         margin-left: 10px;
         min-width: 40%;
         display: flex;
         flex-wrap: wrap;
     }
+
     .highlight{
         text-decoration: underline;
         text-decoration-color: var(--mobile-underline-color);
     }
+
     .titles{
         font-size: .8em;
     }
+
     .links {
         text-decoration: underline;
         text-decoration-color: var(--mobile-underline-color);
@@ -414,6 +399,7 @@ ol {
         width: auto;
         overflow-wrap: break-word;
     }
+    
     .projects h4,.assignments h4,.contests h4{
         margin: 1.5vw;
         margin-top: 0vw;
