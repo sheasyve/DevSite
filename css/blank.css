@@ -160,7 +160,7 @@ h3,.info h3{
     padding-bottom: .1vw;
 }
 
-ts and Highlighting */
+
 .numlist li::marker {
     color: var(--highlight-color);
 }
@@ -196,12 +196,6 @@ ol,ul{
     margin: 5px 0;
     color: var(--primary-text-color);
 }
-
-
-
-
-
-
 .titles a:hover {
     text-decoration: underline;
 }
