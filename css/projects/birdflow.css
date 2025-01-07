@@ -45,10 +45,7 @@ h2, p {
     text-decoration-color: var(--mobile-underline-color);
 }
 
-
-h3,.info h3 {
-    overflow: hidden;
-    color: var(--primary-text-color);
+.info{
     background: linear-gradient(135deg, var(--h3-background-color2),var(--h3-background-color));
     backdrop-filter: blur(10px);
     border-radius: 5px;
@@ -56,6 +53,12 @@ h3,.info h3 {
     margin-right: auto;
     padding: 5px;
     margin-bottom: 1vw;
+}
+
+h3,.info h3 {
+    overflow: hidden;
+    color: var(--primary-text-color);
+    
     text-decoration: none;
     
 }
