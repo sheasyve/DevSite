@@ -35,13 +35,20 @@ h2, p {
 }
 
 .section1 h1, .section1 a{
+    background: linear-gradient(135deg, var(--h3-background-color2),var(--h3-background-color));
+    backdrop-filter: blur(10px);
     color: var(--primary-text-color);
+    border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
+    margin-bottom: 1vw;
     text-decoration: none;
     
 }
 .section1 h1:hover, .section1 a:hover{
+    background: linear-gradient(135deg, var(--h3-background-color2),var(--h3-background-color));
+    backdrop-filter: blur(10px);
     margin-left: auto;
     margin-right: auto;
     text-decoration: underline;
@@ -51,7 +58,6 @@ h2, p {
 
 
 h3,.info h3 {
-    border-radius: 5px;
     overflow: hidden;
     color: var(--primary-text-color);
     background: linear-gradient(135deg, var(--h3-background-color2),var(--h3-background-color));
