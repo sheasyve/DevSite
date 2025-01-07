@@ -34,7 +34,7 @@ h2, p {
     text-align: center;
 }
 
-h3,.info h3, .info h1{
+h3,.info h3, .info h1, .info a{
     border-radius: 5px;
     overflow: hidden;
     color: var(--primary-text-color);
@@ -45,6 +45,8 @@ h3,.info h3, .info h1{
     margin-right: auto;
     padding: 5px;
     margin-bottom: 1vw;
+    text-decoration: none;
+    
 }
 
 .info h3 {
@@ -149,9 +151,6 @@ h3,.info h3, .info h1{
     height: auto;
 }
 
-
-
-
 .section1{
     background: linear-gradient(135deg, var(--section1-color1),var(--section1-color2));
     backdrop-filter: blur(10px);
@@ -204,8 +203,6 @@ ol,ul{
     color: var(--highlight-color);
     font-weight: bold;
 }
-
-
 
 ol {
     color: var(--highlight-color);
