@@ -3,7 +3,7 @@
     /* Dark gray (almost black) background */
     --background-color: #1a1a1a;
     /* Slightly transparent dark overlay background */
-    --main-background-color: rgba(0, 0, 0, 0.61);
+    --main-background-color: rgba(148, 65, 90, 0.61);
     --main-background-color2: rgba(248, 248, 248, 0.13);
     --overlay-background-color: rgba(30, 30, 30, 0.63);
     --overlay-background-color2: rgba(92, 72, 72, 0.247);
@@ -45,7 +45,7 @@
     --h3-background-color4: rgba(15, 8, 8, 0.63);
     
     /* Transparent sections with dark red tones */
-    --section1-color1: #802f2f00;
+    --section1-color1: #270e0ec9;
     --section1-color2: #61343452;
     
     /* Crimson for ranks or badges */

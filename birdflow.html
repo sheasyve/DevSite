@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/projects/birdflow.css" rel="stylesheet" />
+    <link href="css/project.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -45,33 +45,40 @@
     </div>
 </body>
 <div class="section1">
-    
     <div class="info">
-        <h1><a href="https://github.com/sheasyve/BirdFlow">
-            <b>BirdFlow - Wind Simulator Extension for Blender</b>
-        </a></h1>
+        <a href="https://github.com/sheasyve/BirdFlow">
+            <h1><b>BirdFlow - Wind Simulator Extension for Blender</b>
+            </h1>
+        </a>
         <h3>
-        Birdflow is a tool for generating wind simulations in Blender, built with Python and Cython. The extension can
-        be used to
-        generate realistic looking particle based visualizations of air on an object. The engine uses a Eulerian grid
-        with a Conjugate
-        Gradient solver to simulate incompressible flow by solving the Navier-Stokes equations. Visuals are rendered
-        using particles, for
-        a simple way to display the behavior of the airflow. This involved using Lagrangian methods for particle
-        collisions and movement, making the simulation a hybrid approach having both Eulerian and Lagrangian aspects.
-        Results were overall satisfying,
-        although not everything I initially planned was implemented. Realistic air movement beyond naive collision can
-        be observed,
-        as particles avoid high pressure areas and gravitate towards low pressure areas. Collisions are convincing with
-        dynamic velocity damping and redirection, with tangential friction being applied. Although the overall goal of a
-        Eulerian fluid simulation
-        was achieved, there are various shortcomings with the program discussed in the paper, which can lead to
-        inconsistent results.
-        Program execution is not conventionally fast, although given the problem space it is acceptable. With large grid
-        settings and
-        thousands of particles, the simulation can take upwards of 5 minutes. However, simpler settings can lead to
-        run-times under 30
-        seconds.</h3>
+            Birdflow is a tool for generating wind simulations in Blender, built with Python and Cython. The extension
+            can
+            be used to
+            generate realistic looking particle based visualizations of air on an object. The engine uses a Eulerian
+            grid
+            with a Conjugate
+            Gradient solver to simulate incompressible flow by solving the Navier-Stokes equations. Visuals are rendered
+            using particles, for
+            a simple way to display the behavior of the airflow. This involved using Lagrangian methods for particle
+            collisions and movement, making the simulation a hybrid approach having both Eulerian and Lagrangian
+            aspects.
+            Results were overall satisfying,
+            although not everything I initially planned was implemented. Realistic air movement beyond naive collision
+            can
+            be observed,
+            as particles avoid high pressure areas and gravitate towards low pressure areas. Collisions are convincing
+            with
+            dynamic velocity damping and redirection, with tangential friction being applied. Although the overall goal
+            of a
+            Eulerian fluid simulation
+            was achieved, there are various shortcomings with the program discussed in the paper, which can lead to
+            inconsistent results.
+            Program execution is not conventionally fast, although given the problem space it is acceptable. With large
+            grid
+            settings and
+            thousands of particles, the simulation can take upwards of 5 minutes. However, simpler settings can lead to
+            run-times under 30
+            seconds.</h3>
     </div>
 </div>
 
