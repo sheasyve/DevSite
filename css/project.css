@@ -12,7 +12,7 @@ html {
 /* Global Styles */
 body {
     background-color: var(--background-color);
-    background-image: url('../images/bg2.png');
+    background-image: url('../media/bg2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,6 +247,11 @@ ol {
 }
 
 @media (max-width: 700px) {
+    .section1 a:hover{
+        text-decoration: underline;
+        text-decoration-color: var(--mobile-underline-color);
+    }
+
     .highlight{
         text-decoration: underline;
         text-decoration-color: var(--mobile-underline-color);
@@ -277,6 +282,10 @@ ol {
 @media (min-width: 768px) {
     body {
         margin: 0 2vw; 
+    }
+    .section1 a:hover{
+        text-decoration: underline;
+        text-decoration-color: var(--mobile-underline-color);
     }
 }
 
