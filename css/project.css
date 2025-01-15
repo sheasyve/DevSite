@@ -103,6 +103,12 @@ h3,.info h3 {
     color: var(--highlight-color);
 }
 
+.info video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }  
+
 /* Headings and Titles */
 .titles {
     text-align: center;
