@@ -3,8 +3,8 @@
     /* Dark gray (almost black) background */
     --background-color: #1a1a1a;
     /* Slightly transparent dark overlay background */
-    --main-background-color: rgba(148, 65, 90, 0.61);
-    --main-background-color2: rgba(248, 248, 248, 0.13);
+    --main-background-color: rgba(11, 45, 58, 0.973);
+    --main-background-color2: rgba(212, 132, 132, 0.267);
     --overlay-background-color: rgba(30, 30, 30, 0.63);
     --overlay-background-color2: rgba(92, 72, 72, 0.247);
     
@@ -29,14 +29,14 @@
     --box-shadow-color: rgba(0, 0, 0, 0.5);
     
     /* Gradient for title with dark red tones */
-    --title-gradient-start: #5a0202;
-    --title-gradient-end: #be6060;
+    --title-gradient-start: rgba(0, 24, 34, 0.973);
+    --title-gradient-end: #a73434;
     --title-gradient-start2: rgba(10, 7, 7, 0.63);
     --title-gradient-end2: #501e1ea8;
     
     /* Muted link gradient with crimson tones */
     --link-gradient-start: #703b3b;
-    --link-gradient-end: #5a0202;
+    --link-gradient-end: rgba(0, 22, 31, 0.548);
     
     /* Transparent dark crimson background for headers */
     --h3-background-color: rgba(12, 2, 2, 0.63);
