@@ -46,7 +46,7 @@ h2, p {
 }
 
 .info{
-    background: linear-gradient(135deg, var(--h3-background-color2),var(--h3-background-color));
+    background: linear-gradient(135deg, rgba(167, 61, 61, .2),rgba(65, 20, 20, 0));
     backdrop-filter: blur(10px);
     border-radius: 5px;
     margin-left: auto;
@@ -190,13 +190,20 @@ h3,.info h3 {
 }
 
 .section1{
-    background: linear-gradient(135deg, var(--section1-color1),var(--section1-color2));
+    background: linear-gradient(135deg, var(--section1-color1),var(--section1-color));
     backdrop-filter: blur(10px);
     border-radius: 5px;
+    margin-top: 15px;
     box-shadow: 0px 4px 6px var(--box-shadow-color);
 
 }
-
+.section1 h1{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    
+    margin: 0px;
+    background: linear-gradient(135deg, var(--main-background-color2), var(--main-background-color2));
+}
 
 .numlist li::marker {
     color: var(--highlight-color);
